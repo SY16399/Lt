@@ -2,10 +2,11 @@ package org.example.Collection;
 
 
 import java.util.Hashtable;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class Concurrent_HashMap {
     static class MyService{
-        public Hashtable map = new Hashtable();
+            public ConcurrentHashMap map = new ConcurrentHashMap();
         public void testMethod(){
             for (int i = 0; i < 50000; i++) {
                 try {
